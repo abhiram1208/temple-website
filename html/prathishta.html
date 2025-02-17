@@ -80,9 +80,18 @@
             background-color: #fff;
             color: #000;
             border-radius: 15px;
-            width: 18rem;
             margin: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .main-card {
+            width: 30rem; /* Larger size for the main card */
+            margin: auto;
+        }
+
+        .sub-card {
+            width: 15rem; /* Smaller size for sub-cards */
         }
 
         .card img {
@@ -106,6 +115,9 @@
             font-size: 16px;
         }
 
+        .card:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
     </style>
 </head>
 <body>
@@ -116,7 +128,7 @@
         <img class="logo" src="https://play-lh.googleusercontent.com/o49uJJp0-7MSX39xOJhbRcYi6AGpTHbO6rLPfX6IkQh5nlTsZ-Nvw1st9xdKtMnOVmGC" alt="Temple Logo">
     </div>
     <h1>തേറ്റമല എസ്റ്റേറ്റ് ശ്രീ ഭഗവതി ക്ഷേത്രം</h1>
-    <marquee behavior="scroll" direction="left">എല്ലാ ഞായറാഴ്ചയും പൂജ ഉണ്ടാകും</marquee>
+    <marquee behavior="scroll" direction="left">എല്ലാ ഞായറാഴ്ചയും രാവിലെ 8:00 പൂജ ഉണ്ടാകും</marquee>
 </header>
 
 <hr>
@@ -124,23 +136,23 @@
 <div class="container">
     <div class="button-container">
         <button onclick="window.location.href='home.html'" class="btn">Home</button>
-        <button onclick="window.location.href='vazhipad.html'" class="btn">വഴിപാട്</button>
+        <button onclick="window.location.href='vazipad.html'" class="btn">വഴിപാട്</button>
         <button onclick="window.location.href='prathishta.html'" class="btn">പ്രതിഷ്ഠ</button>
         <button onclick="window.location.href='utsavam.html'" class="btn">ഉത്സവം</button>
         <button onclick="window.location.href='contact.html'" class="btn">Contact Us</button>
     </div>
 
     <div class="content-section my-5">
-        <h2>പ്രതിഷ്ഠ (Prathishta)</h2>
-        <p>
+        <h2 style="display: flex; justify-content: center; align-items:center">പ്രതിഷ്ഠ (Prathishta)</h2>
+        <!-- <p>
             The following are the deities worshipped in our temple, each with its own significance. The images below represent these divine beings along with a brief description.
-        </p>
+        </p> -->
     </div>
 
     <div class="card-container">
-        <!-- Card 1: God 1 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250.png?text=God+1" alt="God 1 Image">
+        <!-- Main Card: God 1 -->
+        <div class="card main-card" id="card1">
+            <img src="" alt="God 1 Image">
             <div class="card-body">
                 <h5 class="card-title">ദേവി ഭഗവതി (Devi Bhagavathi)</h5>
                 <p class="card-text">
@@ -148,9 +160,12 @@
                 </p>
             </div>
         </div>
-        <!-- Card 2: God 2 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250.png?text=God+2" alt="God 2 Image">
+    </div>
+
+    <div class="card-container">
+        <!-- Sub Cards -->
+        <div class="card sub-card" id="card2">
+            <img src="templ.jpeg" alt="God 2 Image">
             <div class="card-body">
                 <h5 class="card-title">ശിവഭഗവാൻ (Shiva Bhagwan)</h5>
                 <p class="card-text">
@@ -158,8 +173,8 @@
                 </p>
             </div>
         </div>
-        <!-- Card 3: God 3 -->
-        <div class="card">
+
+        <div class="card sub-card" id="card3">
             <img src="https://via.placeholder.com/350x250.png?text=God+3" alt="God 3 Image">
             <div class="card-body">
                 <h5 class="card-title">വിഷ്ണു ഭഗവാൻ (Vishnu Bhagwan)</h5>
@@ -168,8 +183,8 @@
                 </p>
             </div>
         </div>
-        <!-- Card 4: God 4 -->
-        <div class="card">
+
+        <div class="card sub-card" id="card4">
             <img src="https://via.placeholder.com/350x250.png?text=God+4" alt="God 4 Image">
             <div class="card-body">
                 <h5 class="card-title">ഗണപതി (Ganapati)</h5>
@@ -178,8 +193,8 @@
                 </p>
             </div>
         </div>
-        <!-- Card 5: God 5 -->
-        <div class="card">
+
+        <div class="card sub-card" id="card5">
             <img src="https://via.placeholder.com/350x250.png?text=God+5" alt="God 5 Image">
             <div class="card-body">
                 <h5 class="card-title">ദുര്ഗാ (Durga)</h5>
@@ -188,8 +203,8 @@
                 </p>
             </div>
         </div>
-        <!-- Card 6: God 6 -->
-        <div class="card">
+
+        <div class="card sub-card" id="card6">
             <img src="https://via.placeholder.com/350x250.png?text=God+6" alt="God 6 Image">
             <div class="card-body">
                 <h5 class="card-title">കൃഷ്ണഭഗവാൻ (Krishna Bhagwan)</h5>
