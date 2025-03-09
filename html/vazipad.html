@@ -6,11 +6,11 @@
     <title>വഴിപാട് - തേറ്റമല എസ്റ്റേറ്റ് ശ്രീ ഭഗവതി ക്ഷേത്രം</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"  rel="stylesheet" integrity="sha384-KyZXEJx3fN5Ka7L9Y1gT8v2WbYor0A2uHmyB7u7mllG5UBF1t9L4UbL5P4wZlEdX" crossorigin="anonymous">
-
+  
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('https://www.shutterstock.com/image-photo/perumbavoor-kerala-india-march-20-260nw-626149121.jpg'); /* Replace with actual background image */
+            background-image: url('templ.jpeg'); /* Replace with actual background image */
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -89,13 +89,15 @@
         .vazhipad-table {
             width: 100%;
             margin-top: 40px;
-            text-align: center;
+            text-align: left;
             color: black;
         }
 
         .vazhipad-table th, .vazhipad-table td {
-            padding: 15px;
+            padding: 20px;
             border: 1px solid #ddd;
+            word-spacing: 3px;
+            
         }
 
         .vazhipad-table th {
@@ -106,7 +108,80 @@
         .vazhipad-table td {
             background-color: #f8f9fa;
         }
+      
 
+        .acontainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 1200px;
+            align-self: start;
+        }
+        
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            flex: 1 2 calc(43.33% - 40px); /* Ensures 3 cards per row with gap */
+            min-width: 200px;
+            max-width: 300px;
+            color: #000;
+            text-align: center;
+            border: 50px;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: red;
+            border-bottom: 2px solid red;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .abc {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .abc, .abc th, .abc td {
+            border: 1px solid #ddd;
+        }
+        .abc th, .abc td {
+            padding: 10px;
+            text-align: left;
+        }
+        .abc th {
+            background: #ffcccc;
+            font-weight: bold;
+        }
+        .abc tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        .abc tr:nth-child(odd) {
+            background: #ffffff;
+        }
+      
+
+       
+          @media (max-width: 900px) {
+            .card {
+                flex: 1 1 calc(50% - 30px); /* 2 cards per row for medium screens */
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: row;
+                align-items: center;
+            }
+            .card {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    
     </style>
 </head>
 <body>
@@ -133,51 +208,161 @@
 
     <div class="content-section my-5">
         <h2 style="display: flex; justify-content: center; align-items:center">വഴിപാട് (Vazhipad)</h2>
-        <!-- <p>
-            The temple offers a variety of services and prayers that devotees can avail themselves of. Below is the list of offerings and their respective prices. 
-        </p> -->
+      
     </div>
 
+
     <div class="vazhipad-table">
-        <table class="table table-bordered" align="center">
+        <table class="table " align="center" >
             <thead>
-                <tr>
+                <tr><th>No</th>
                     <th>Name of the Offering</th>
                     <th>Price (in INR)</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>ppp</td>
-                    <td>₹200</td>
-                </tr>
-                <tr>
-                    <td>gg</td>
-                    <td>₹500</td>
-                </tr>
-                <tr>
-                    <td>kik</td>
-                    <td>₹1000</td>
-                </tr>
-                <tr>
-                    <td>hhh</td>
-                    <td>₹300</td>
-                </tr>
-                <tr>
-                    <td>jjj</td>
-                    <td>₹700</td>
-                </tr>
-                <tr>
-                    <td>oooo</td>
-                    <td>₹1500</td>
-                </tr>
+                <tr><td>1</td><td>രക്തപുഷ്പാഞ്ജലി</td><td>₹10</td></tr>
+                <tr><td>2</td><td>പുഷ്പാഞ്ജലി</td><td>₹10</td></tr>
+                <tr><td>3</td><td>ലളിതസഹസ്രനാമ പുഷ്‌പാഞ്ജലി</td><td>₹20</td></tr>
+                <tr><td>4</td><td>ശത്രുസംഹാര പുഷ്‌പാഞ്ജലി</td><td>₹20</td></tr>
+                <tr><td>5</td><td>ഭാഗ്യസൂക്ത പുഷ്പാഞ്‌ജലി</td><td>₹20</td></tr>
+                <tr><td>6</td><td>സ്വയംവര പുഷ്പാഞ്ജലി</td><td>₹20</td></tr>
+                <tr><td>7</td><td>അഷ്ടോത്തര പുഷ്‌പാഞ്‌ജലി</td><td>₹20</td></tr>
+                <tr><td>8</td><td>ഐക്യത പുഷ്‌പാഞ്‌ജലി</td><td>₹20</td></tr>
+                <tr><td>9</td><td>സായൂജ്യ പുഷ്‌പാഞ്ജലി</td><td>₹20</td></tr>
+                <tr><td>10</td><td>മൃത്യുഞ്ജയ പുഷ്പാഞ്ജലി</td><td>₹20</td></tr>
+                <tr><td>11</td><td>നെയ്‌വിളക്ക്</td><td>₹20</td></tr>
+                <tr><td>12</td><td>മുട്ടറുക്കൽ</td><td>₹20</td></tr>
+                <tr><td>13</td><td>തൃമധുരം</td><td>₹20</td></tr>
+                <tr><td>14</td><td>വിളക്ക്മാല</td><td>₹20</td></tr>
+                <tr><td>15</td><td>കുട്ടിയൂൺ</td><td>₹30</td></tr>
+                <tr><td>16</td><td>കുങ്കുമാർച്ചന</td><td>₹20</td></tr>
+                <tr><td>17</td><td>പണപായസം <br> (സാധനം കൊണ്ടുവന്നാൽ-₹10)</td><td>₹101</td></tr>
+                <tr><td>18</td><td>കടുംപായസം</td><td>₹101</td></tr>
+                <tr><td>19</td><td>നെയ്പായസം</td><td>₹101</td></tr>
+                <tr><td>20</td><td>വെള്ളിനിവേദ്യം <br>(സാധനം കൊണ്ടുവന്നാൽ-₹20)</td><td>₹101</td></tr>
+                <tr><td>21</td><td>വിവാഹം <br>(ബുക്ക് ചെയ്യണം)</td><td>₹1001</td></tr>
+                <tr><td>22</td><td>ദീപസ്തംഭം</td><td>₹251</td></tr>
+                <tr><td>23</td><td>തൃക്കാല പൂജ</td><td>₹1501</td></tr>
+                <tr><td>24</td><td>ഒരു നേരത്തെ പൂജ</td><td>₹351</td></tr>
+                <tr><td>25</td><td>ഒരു ദിവസത്തെ പൂജ</td><td>₹1501</td></tr>
+                <tr><td>26</td><td>ഭഗവതിസേവ</td><td>₹1001</td></tr>
+                <tr><td>27</td><td>വാഹനപൂജ</td><td>₹51</td></tr>
+                <tr><td>28</td><td>കെട്ട്നിറക്കൽ</td><td>₹51</td></tr>
+                <tr><td>29</td><td>തകിട്പൂജ</td><td>₹30</td></tr>
+                <tr><td>30</td><td>കളഭചാർത്ത്</td><td>₹201</td></tr>
+                <tr><td>31</td><td>സ്വർണത്താലിയോപ്പിക്കൽ</td><td>₹151</td></tr>
+                <tr><td>32</td><td>അലങ്കാരപൂജ</td><td>₹301</td></tr>
+                <tr><td>33</td><td>മാലപൂജ</td><td>₹20</td></tr>
+                <tr><td>34</td><td>പട്ടച്ചാർത്തൽ</td><td>₹20</td></tr>
+                <tr><td>35</td><td>വെടിവഴിപ്പാട്</td><td>₹20</td></tr>
+                
             </tbody>
         </table>
     </div>
+ 
+
+<br>
+    <div class="acontainer">
+        <div class="card">
+            <h3 style="color: red;">ഗണപതി</h3>
+             <table class="abc" >
+            <tr> <td>ഗണപതിഹോമം </td> <td>₹125</td></tr>
+            <tr> <td>ഒറ്റ തേങ്ങ അഷ്ടദ്രവ്യ മഹാഗണപതി ഹോമം</td> <td>₹3001</td></tr>
+            <tr> <td>നാളികേരം ഉടക്കൽ</td> <td>₹25</td></tr>
+            <tr> <td>കറുക മാല</td> <td>₹25</td></tr>
+            <tr> <td>  തേങ്ങമുട്ട് </td> <td>₹30</td></tr>
+            <tr> <td>നെയ്‌വിളക്ക്</td> <td>₹20</td></tr>
+                       </table>
+        </div>
+        
+        <div class="card">
+            <h3  style="color: red;">ബാലമുരുകൻ</h3>
+            <table class="abc">
+                <tr> <td>നെയ്‌വിളക്ക് </td> <td>₹20</td></tr>
+                <tr> <td>തുളസി മാല</td> <td>₹10</td></tr>
+                <tr> <td>നാളികേരം ഉടക്കൽ</td> <td>₹25</td></tr>
+                <tr> <td>പഞ്ചാമൃതം <br>
+                    (സാധനം കൊണ്ടുവരണം) </td> <td>₹51</td></tr>
+                
+                           
+            </table>
+
+
+        </div>
+
+        <div class="card">
+            <h3  style="color: red;">ശിവൻ</h3>
+            <table class="abc">
+                <tr> <td>നെയ്‌വിളക്ക് </td> <td>₹20</td></tr>
+                <tr><td>ജലധാര</td> <td>₹10</td></tr>
+                <tr><td>ഇളനീർ അഭിഷേകം</td> <td>₹10</td></tr>
+                <tr><td>പാൽ അഭിഷേകം</td> <td>₹10</td></tr>
+                <tr><td>കൂവളമാല</td> <td>₹101</td></tr>
+                <tr><td>മാല</td> <td>₹10</td></tr>
+                <tr><td>ശംഖാഭിഷേകം</td> <td>₹15</td></tr>
+                <tr><td>കെടാവിളക്ക്</td> <td>₹101</td></tr>
+                <tr><td>പാൽപായസം</td> <td>₹101</td></tr>
+                <tr><td>കറുക ഹോമം   </td> <td>₹101</td></tr>
+                <tr><td>വിളക്ക് മാല</td> <td>₹151</td></tr>
+                <tr><td>ഒരുകുടം ജലധാര</td> <td>₹10</td></tr>
+                <tr><td> മണ്ഡലമാസത്തിലെ പ്രത്യേക വഴിപാട്</td> <td>₹51</td></tr>
+
+                </table>
+            
+        </div>
+
+        <div class="card">
+            <h3  style="color: red; ">സരസ്വതി</h3>
+            <table class="abc"   >
+                <tr> <td>വിദ്യാസൂക്‌ത പുഷ്‌പാഞ്‌ജലി   </td> <td>₹20</td></tr>
+                <tr><td>പട്ട് ചാർത്തൽ</td> <td>₹10</td></tr>
+                <tr><td>വിദ്യാമുട്ട് </td> <td>₹20</td></tr>
+                <tr><td>സാരസ്വത പുഷ്പാഞ്‌ജലി  </td> <td>₹20</td></tr>
+                <tr><td>വിദ്യാരംഭം</td> <td>₹51</td></tr>
+              </table>
+           
+        </div>
+
+        <div class="card">
+            <h3  style="color: red;">നാഗം            </h3>
+            <table class="abc">
+                <tr> <td>നാഗപ്രീതി  </td> <td>₹10</td></tr>
+                <tr><td>പഴം, മഞ്ഞൾ, അഭിഷേകം <br>
+                    (സാധനം കൊണ്ടുവന്നാൽ-₹10)
+                </td> <td>₹51</td></tr>
+                <tr><td>നാഗപൂജ </td> <td>₹201</td></tr>
+              
+              </table>  
+
+
+
+
+        </div>
+
+        <div class="card">
+            <h3  style="color: red;">ഗുളികൻ</h3>
+            <table class="abc">
+                <tr> <td>അരിചൊരിയൽ  </td> <td>₹51</td></tr>
+                <tr><td>നാളികേരം ഉടക്കൽ  </td> <td>₹10</td></tr>
+                <tr><td>നാളികേരം ഉടക്കൽ   </td> <td>₹20</td></tr>
+              
+              </table>
+           
+
+        </div>
+    </div>
+
+
+
 
 </div>
 
+
+
+
 <!-- Bootstrap JS (Optional, for responsive design and features) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb8FqHPJX5K7gB5wvs2F1ltz4Ms0gF7zY4pa3vQgmGo9g28ci" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0JQF5L6p7sF5MTz5OLp50k7oYy5SKy8i3r7ImI3Kne5t6gfD" crossorigin="anonymous"></script>
 
